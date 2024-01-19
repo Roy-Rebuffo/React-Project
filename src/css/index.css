@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+body{
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  background-image: url(../images/backgroundClouds.jpeg);
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+.site{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+/*HeaderCSS*/
+header{
+  margin-top: 20px;
+  margin-bottom: 50px;
+  margin-left: 20px;
+}
+.section-header{
+  display: flex;
+  width: 100%;
+}
+.nav-container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.nav-container ul
+{
+   padding-right: 0px;
+   padding-left: 0px;
+   padding-bottom: 0px;
+   padding-top: 0px;
+   margin: 0px;
+   width: 100%;
+}
+.nav-container li
+{
+   list-style-type: none;
+   display: inline;
+   padding-right: 5px;
+   width: 100%;
+   margin: 10px;
+}
+/*HomeCSS*/
+.container-home-article{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.title-home-container{
+  width: 50%;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+.input-home-container{
+  width: 50%;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.input-home-container input{
+  margin-top: 20px;
+  width: 50%;
+  height: 30px;
+}
+.container-home-card{
+  width: 50%;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(244, 212, 212, 0.298);
+  border-radius: 29px;
+
+}
+.container-home-div{
+  display: flex;
+  justify-content: center;
+}
+.container-home-card p{
+  width: 50%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/*LoginCSS*/
+body .card-form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+}
+.wrapper{
+  width: 420px;
+  background: rgba(255, 255, 255, 0.674);
+  color: #000000;
+  border-radius: 10px;
+  padding: 30px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper h2{
+  font-size: 36px;
+  text-align: center;
+}
+.wrapper .input-box{
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 36px 0;
+}
+.input-box input{
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  outline: none;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: #fff;
+  padding: 20px 45px 20px 20px;
+}
+.input-box input::placeholder{
+  color: #000000;
+}
+
+.input-box .icon{
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+}
+.wrapper .remember-forgot{
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15px;
+}
+.remember-forgot label input{
+  accent-color: #000000;
+  margin-right: 4px;
+}
+
+.remember-forgot a {
+  color:#000000;
+  text-decoration: underline;
+}
+.wrapper button{
+  width: 100%;
+  height: 45px;
+  background: #a47070;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0,0,0, .1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 700;
+}
+.wrapper .register-link{
+  font-size: 14.5px;
+  text-align: center;
+  margin: 20px 0 15px;
+}
+.register-link p a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: 600;
+}
+.register-link p a:hover{
+  text-decoration: underline;
+}
+
+/*MediaQueriresCSS for Mobile*/
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
