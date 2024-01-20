@@ -1,8 +1,11 @@
 import { FaUser, FaLock } from "react-icons/fa";
-
+import Homer from '../images/homer.svg'
 const Register = () => {
   return (
     <div className="card-form">
+    <div className="image-container">
+    <img className="image-register-homer" src={Homer}></img>
+    </div>
     <div className="wrapper">
     <form>
         <h2>Register</h2>

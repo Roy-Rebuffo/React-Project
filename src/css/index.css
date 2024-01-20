@@ -9,6 +9,7 @@
 }
 body{
   width: 100%;
+  height: 100vh;
   font-family: 'Poppins', sans-serif;
   background-image: url(../images/backgroundClouds.jpeg);
   background-repeat:no-repeat;
@@ -34,6 +35,7 @@ header{
   display: flex;
   align-items: center;
 }
+
 .nav-container ul
 {
    padding-right: 0px;
@@ -51,6 +53,17 @@ header{
    width: 100%;
    margin: 10px;
 }
+.nav-container ul li a{
+  width: 100%;
+}
+.nav-container ul li a {
+  text-decoration: none;
+  color: #000000;
+}
+.nav-container ul li a:hover {
+  text-decoration: underline;
+}
+
 /*HomeCSS*/
 .container-home-article{
   display: flex;
@@ -63,6 +76,8 @@ header{
   margin-bottom: 50px;
   display: flex;
   justify-content: center;
+  font-size: 30px;
+  font-weight: bold;
 }
 .input-home-container{
   width: 50%;
@@ -71,10 +86,20 @@ header{
   flex-direction: column;
   align-items: center;
 }
+.input-home-container label{
+  font-weight: bold;
+}
 .input-home-container input{
   margin-top: 20px;
   width: 50%;
   height: 30px;
+  background: #ffffff9b;
+  outline: none;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: #000000;
+  padding: 20px 45px 20px 20px;
 }
 .container-home-card{
   width: 50%;
@@ -82,7 +107,7 @@ header{
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(244, 212, 212, 0.298);
+  background: #ffffff72;
   border-radius: 29px;
 
 }
@@ -95,16 +120,17 @@ header{
   margin-top: 20px;
   margin-bottom: 20px;
 }
-/*LoginCSS*/
+/*Login+RegisterCSS*/
 body .card-form{
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 50vh;
+  margin-top: 50px;
 }
 .wrapper{
   width: 420px;
-  background: rgba(255, 255, 255, 0.674);
+  background: rgb(255, 255, 255);
   color: #000000;
   border-radius: 10px;
   padding: 30px 40px;
@@ -130,11 +156,11 @@ body .card-form{
   border: 2px solid rgba(0, 0, 0, 0.2);
   border-radius: 40px;
   font-size: 16px;
-  color: #fff;
+  color: #000000;
   padding: 20px 45px 20px 20px;
 }
 .input-box input::placeholder{
-  color: #000000;
+  color: #00000036;
 }
 
 .input-box .icon{
@@ -162,11 +188,11 @@ body .card-form{
 .wrapper button{
   width: 100%;
   height: 45px;
-  background: #a47070;
+  background: #7b9cb3;
   border: none;
   outline: none;
   border-radius: 40px;
-  box-shadow: 0 0 10px rgba(0,0,0, .1);
+  box-shadow: 0 0 10px rgba(122, 93, 93, 0.1);
   cursor: pointer;
   font-size: 16px;
   color: #333;
@@ -185,6 +211,110 @@ body .card-form{
 .register-link p a:hover{
   text-decoration: underline;
 }
+
+.image-register-homer {
+  position: absolute;
+  z-index: -1;  /* Asegura que la imagen esté detrás del formulario */
+  width: 350px;
+  top: 110px;
+  margin-left: 40px;
+}
+.image-login-lisa {
+  position: absolute;
+  z-index: -1;  /* Asegura que la imagen esté detrás del formulario */
+  width: 380px;
+  top: 110px;
+  margin-left: 150px;
+}
+
+
+/*ProfileCSS*/
+.profile-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.profile-card{
+  width: 50%;
+}
+.profile-info-title{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+.profile-info h2{
+  margin: 20px;
+}
+.profile-info h2:hover{
+  text-decoration: underline;
+}
+.image-profile-family{
+  position: absolute;
+  margin-top: 400px;
+  margin-left: 300px;
+  z-index: -1; 
+  width: 700px;
+  top: 110px;
+
+}
+/*LogoutCSS*/
+.logout-container{
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+.logout-form p {
+  padding: 30px;
+  font-weight: bold;
+  font-size: 50px;
+}
+.logout-button-container a{
+  color: #000000;
+}
+.logout-button-container a:link{
+  text-decoration: none;
+}
+
+.image-logout-homer {
+  position: absolute;
+  margin-left: -700px;
+  z-index: -1; 
+  width: 500px;
+  top: 110px;
+}
+
+.logout-button-container{
+  width: 100%;
+}
+.logout-container button{
+  width: 10%;
+  width: 100%;
+  height: 45px;
+  background: #7b9cb3;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(122, 93, 93, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 700;
+}
+.logout-button-container button{
+  width: 10%;
+}
+
+
+
+
+
+
+
+
+
 
 /*MediaQueriresCSS for Mobile*/
 [class*="col-"] {
