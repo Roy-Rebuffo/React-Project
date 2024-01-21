@@ -1,76 +1,84 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   list-style: none;
 }
-body{
+
+body {
   width: 100%;
   font-family: 'Poppins', sans-serif;
   background-image: url(../images/backgroundClouds.jpeg);
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   background-size: cover;
 }
-.site{
+
+.site {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
+
 /*HeaderCSS*/
-header{
+header {
   margin-top: 20px;
   margin-bottom: 50px;
   margin-left: 20px;
 }
-.section-header{
+
+.section-header {
   display: flex;
   width: 100%;
 }
-.nav-container{
+
+.nav-container {
   width: 100%;
   display: flex;
   align-items: center;
 }
 
-.nav-container ul
-{
-   padding-right: 0px;
-   padding-left: 0px;
-   padding-bottom: 0px;
-   padding-top: 0px;
-   margin: 0px;
-   width: 100%;
-}
-.nav-container li
-{
-   list-style-type: none;
-   display: inline;
-   padding-right: 5px;
-   width: 100%;
-   margin: 10px;
-}
-.nav-container ul li a{
+.nav-container ul {
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  margin: 0px;
   width: 100%;
 }
+
+.nav-container li {
+  list-style-type: none;
+  display: inline;
+  padding-right: 5px;
+  width: 100%;
+  margin: 10px;
+}
+
+.nav-container ul li a {
+  width: 100%;
+}
+
 .nav-container ul li a {
   text-decoration: none;
   color: #000000;
 }
+
 .nav-container ul li a:hover {
   text-decoration: underline;
 }
 
 /*HomeCSS*/
-.container-home-article{
+.container-home-article {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
 }
-.title-home-container{
+
+.title-home-container {
   width: 50%;
   margin-bottom: 50px;
   display: flex;
@@ -78,17 +86,20 @@ header{
   font-size: 30px;
   font-weight: bold;
 }
-.input-home-container{
+
+.input-home-container {
   width: 50%;
   margin-bottom: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.input-home-container label{
+
+.input-home-container label {
   font-weight: bold;
 }
-.input-home-container input{
+
+.input-home-container input {
   margin-top: 20px;
   width: 50%;
   height: 30px;
@@ -100,7 +111,8 @@ header{
   color: #000000;
   padding: 20px 45px 20px 20px;
 }
-.container-home-card{
+
+.container-home-card {
   width: 50%;
   margin-bottom: 50px;
   display: flex;
@@ -110,26 +122,31 @@ header{
   border-radius: 29px;
 
 }
-.container-home-div{
+
+.container-home-div {
   display: flex;
   justify-content: center;
 }
-.container-home-card p{
+
+.container-home-card p {
   width: 50%;
   margin-top: 20px;
   margin-bottom: 20px;
   font-weight: bold;
 }
-.container-home-div span{
+
+.container-home-div span {
   text-decoration: underline;
 }
+
 /* ListaDePersonajes.css */
-.container-lista-personajes{
+.container-lista-personajes {
   width: 100%;
   display: flex;
   justify-content: center;
 
 }
+
 .lista-personajes {
   width: 50%;
   display: flex;
@@ -138,23 +155,28 @@ header{
   flex-direction: column;
   align-items: center;
 }
+
 .lista-personajes ul {
   display: flex;
   flex-wrap: wrap;
   margin-left: 50px;
 }
-.lista-personajes ul li{
+
+.lista-personajes ul li {
   display: flex;
   flex-direction: column;
 }
+
 .personaje {
   margin: 10px;
   text-align: center;
 }
-.img-lista-personajes{
+
+.img-lista-personajes {
   width: 200px;
   background-color: #fff;
 }
+
 .lista-personajes {
   display: flex;
   flex-wrap: wrap;
@@ -167,14 +189,15 @@ header{
 }
 
 /*Login+RegisterCSS*/
-body .card-form{
+body .card-form {
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 50vh;
   margin-top: 50px;
 }
-.wrapper{
+
+.wrapper {
   width: 420px;
   background: rgb(255, 255, 255);
   color: #000000;
@@ -184,17 +207,20 @@ body .card-form{
   justify-content: center;
   align-items: center;
 }
-.wrapper h2{
+
+.wrapper h2 {
   font-size: 36px;
   text-align: center;
 }
-.wrapper .input-box{
+
+.wrapper .input-box {
   position: relative;
   width: 100%;
   height: 50px;
   margin: 36px 0;
 }
-.input-box input{
+
+.input-box input {
   width: 100%;
   height: 100%;
   background: transparent;
@@ -205,33 +231,37 @@ body .card-form{
   color: #000000;
   padding: 20px 45px 20px 20px;
 }
-.input-box input::placeholder{
+
+.input-box input::placeholder {
   color: #00000036;
 }
 
-.input-box .icon{
+.input-box .icon {
   position: absolute;
   right: 20px;
   top: 50%;
   transform: translateY(-50%);
   font-size: 16px;
 }
-.wrapper .remember-forgot{
+
+.wrapper .remember-forgot {
   display: flex;
   justify-content: space-between;
   font-size: 14.5px;
   margin: -15px 0 15px;
 }
-.remember-forgot label input{
+
+.remember-forgot label input {
   accent-color: #000000;
   margin-right: 4px;
 }
 
 .remember-forgot a {
-  color:#000000;
+  color: #000000;
   text-decoration: underline;
 }
-.wrapper button{
+
+.wrapper button {
   width: 100%;
   height: 45px;
   background: #7b9cb3;
@@ -244,30 +274,36 @@ body .card-form{
   color: #333;
   font-weight: 700;
 }
-.wrapper .register-link{
+
+.wrapper .register-link {
   font-size: 14.5px;
   text-align: center;
   margin: 20px 0 15px;
 }
+
 .register-link p a {
   color: #000000;
   text-decoration: none;
   font-weight: 600;
 }
-.register-link p a:hover{
+
+.register-link p a:hover {
   text-decoration: underline;
 }
 
 .image-register-homer {
   position: absolute;
-  z-index: -1;  /* Asegura que la imagen esté detrás del formulario */
+  z-index: -1;
+  /* Asegura que la imagen esté detrás del formulario */
   width: 350px;
   top: 110px;
   margin-left: 40px;
 }
+
 .image-login-lisa {
   position: absolute;
-  z-index: -1;  /* Asegura que la imagen esté detrás del formulario */
+  z-index: -1;
+  /* Asegura que la imagen esté detrás del formulario */
   width: 380px;
   top: 110px;
   margin-left: 150px;
@@ -275,86 +311,100 @@ body .card-form{
 
 
 /*ProfileCSS*/
-.profile-container{
+.profile-container {
   width: 100%;
   display: flex;
   justify-content: center;
 }
-.profile-card{
+
+.profile-card {
   width: 50%;
 }
-.profile-info-title{
+
+.profile-info-title {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
   text-decoration: underline;
 }
-.profile-info h2{
+
+.profile-info h2 {
   margin: 20px;
 }
-.profile-info h2:hover{
+
+.profile-info h2:hover {
   text-decoration: underline;
 }
-.image-profile-family{
+
+.image-profile-family {
   position: absolute;
   margin-top: 400px;
   margin-left: 300px;
-  z-index: -1; 
+  z-index: -1;
   width: 700px;
   top: 110px;
 
 }
-.actual-user-container{
+
+.actual-user-container {
   width: 100%;
 }
+
 .profile-info {
   display: flex;
   flex-direction: column;
-  justify-content: space-between; 
+  justify-content: space-between;
 }
-.user-info{
+
+.user-info {
   display: flex;
   align-items: center;
 
 }
-.user-info, .user-role {
+
+.user-info,
+.user-role {
   font-weight: bold;
   font-size: 30px;
   margin-top: 100px;
 }
 
 /*LogoutCSS*/
-.logout-container{
+.logout-container {
   height: 50vh;
   display: flex;
   justify-content: center;
   text-align: center;
   flex-direction: column;
 }
+
 .logout-form p {
   padding: 30px;
   font-weight: bold;
   font-size: 50px;
 }
-.logout-button-container a{
+
+.logout-button-container a {
   color: #000000;
 }
-.logout-button-container a:link{
+
+.logout-button-container a:link {
   text-decoration: none;
 }
 
 .image-logout-homer {
   position: absolute;
   margin-left: -700px;
-  z-index: -1; 
+  z-index: -1;
   width: 500px;
   top: 110px;
 }
 
-.logout-button-container{
+.logout-button-container {
   width: 100%;
 }
-.logout-container button{
+
+.logout-container button {
   width: 10%;
   width: 100%;
   height: 45px;
@@ -368,7 +418,8 @@ body .card-form{
   color: #333;
   font-weight: 700;
 }
-.logout-button-container button{
+
+.logout-button-container button {
   width: 10%;
 }
 
@@ -387,17 +438,53 @@ body .card-form{
 }
 
 @media only screen and (min-width: 768px) {
+
   /* For desktop: */
-  .col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
+  .col-1 {
+    width: 8.33%;
+  }
+
+  .col-2 {
+    width: 16.66%;
+  }
+
+  .col-3 {
+    width: 25%;
+  }
+
+  .col-4 {
+    width: 33.33%;
+  }
+
+  .col-5 {
+    width: 41.66%;
+  }
+
+  .col-6 {
+    width: 50%;
+  }
+
+  .col-7 {
+    width: 58.33%;
+  }
+
+  .col-8 {
+    width: 66.66%;
+  }
+
+  .col-9 {
+    width: 75%;
+  }
+
+  .col-10 {
+    width: 83.33%;
+  }
+
+  .col-11 {
+    width: 91.66%;
+  }
+
+  .col-12 {
+    width: 100%;
+  }
 }

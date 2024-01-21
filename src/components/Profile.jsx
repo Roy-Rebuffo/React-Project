@@ -1,5 +1,5 @@
-import Family from '../images/familia-simpson.svg';
-import ActualUser from './ActualUser';
+import Family from "../images/familia-simpson.svg";
+import ActualUser from "./ActualUser";
 
 const Profile = () => {
   return (
@@ -12,7 +12,7 @@ const Profile = () => {
           <h2>PERFIL Y CUENTA</h2>
         </div>
         <div className="profile-info">
-          <div className="user-info">  
+          <div className="user-info">
             <ActualUser />
           </div>
         </div>

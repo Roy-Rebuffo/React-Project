@@ -23,11 +23,21 @@ const Login = () => {
           <form onSubmit={handleSubmit(logueo)}>
             <h2>Login</h2>
             <div className="input-box">
-              <input type="email" placeholder="Email" {...register("email")} required></input>
+              <input
+                type="email"
+                placeholder="Email"
+                {...register("email")}
+                required
+              ></input>
               <FaUser className="icon" />
             </div>
             <div className="input-box">
-              <input type="password" placeholder="Password" {...register("password")} required></input>
+              <input
+                type="password"
+                placeholder="Password"
+                {...register("password")}
+                required
+              ></input>
               <FaLock className="icon" />
             </div>
             <div className="remember-forgot">

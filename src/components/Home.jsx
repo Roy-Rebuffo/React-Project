@@ -1,9 +1,9 @@
-import { useState } from 'react';
+import { useState } from "react";
 import "../css/index.css";
 import ListaDePersonajes from "./ListaDePersonajes";
 
 const Home = () => {
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchTerm, setSearchTerm] = useState("");
 
   const handleInputChange = (event) => {
     setSearchTerm(event.target.value);

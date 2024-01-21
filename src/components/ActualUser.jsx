@@ -11,14 +11,13 @@ const ActualUser = () => {
 
   return (
     <div className="actual-user-container">
-        <div className="profile-info">
-      <div className=".user-info">
-        <p>Email:{localStorage.getItem("email")}</p>
-        <p>Role: {localStorage.getItem("role")}</p>
+      <div className="profile-info">
+        <div className=".user-info">
+          <p>Email:{localStorage.getItem("email")}</p>
+          <p>Role: {localStorage.getItem("role")}</p>
+        </div>
       </div>
     </div>
-    </div>
-    
   );
 };
 
