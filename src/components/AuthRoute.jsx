@@ -7,6 +7,6 @@ function AuthRoute({ component }) {
   console.log(location);
   if (token) return component;
   if (!token)
-    return <Navigate to="/" state={{ prevRoute: location.pathname }} />;
+    return <Navigate to="/login" state={{ prevRoute: location.pathname }} />;
 }
 export default AuthRoute;

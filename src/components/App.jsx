@@ -9,7 +9,9 @@ import Logout from "./Logout"
 import AuthRoute from "./AuthRoute"
 
 const App = () => {
+  
   return (
+    <>
     <div className="site">
     <Header></Header>
       <Routes>
@@ -23,6 +25,8 @@ const App = () => {
         <Route path="/logout" element= {<Logout></Logout>}></Route>
       </Routes>
     </div>
+    
+    </>
   )
 }
 
