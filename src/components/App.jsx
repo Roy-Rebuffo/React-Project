@@ -6,6 +6,7 @@ import Register from "./Register"
 import Profile from "./Profile"
 import Header from "./Header"
 import Logout from "./Logout"
+import AuthRoute from "./AuthRoute"
 
 const App = () => {
   return (
@@ -15,7 +16,10 @@ const App = () => {
         <Route path="/" element= {<Home></Home>}></Route>
         <Route path="/login" element= {<Login></Login>}></Route>
         <Route path="/register" element= {<Register></Register>}></Route>
-        <Route path="/profile" element= {<Profile></Profile>}></Route>
+        <Route
+            path="/profile"
+            element={<AuthRoute component={<Profile></Profile>} />}
+          />
         <Route path="/logout" element= {<Logout></Logout>}></Route>
       </Routes>
     </div>
